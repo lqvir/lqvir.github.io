@@ -64,6 +64,121 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-flag_in_your_hand1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/12/28/flag_in_your_hand1/" class="article-date">
+  <time datetime="2020-12-28T12:37:55.565Z" itemprop="datePublished">2020-12-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://adworld.xctf.org.cn/task/answer?type=crypto&number=5&grade=1&id=4869&page=1">flag_in_your_hand</a><br>本题的附加为一个html网页和对于的js源码，直接用浏览器打开页面，<br><img src="https://img-blog.csdnimg.cn/20201228195218456.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NjIyNzAxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>使用浏览器的调试功能，可以观察具体的运行过程，略过复杂度的转换过程，可以发现输入的字符串都会经过ck函数<br><img src="https://img-blog.csdnimg.cn/20201228195158430.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NjIyNzAxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>进行判断，如果为判断结果为真，就可以得到flag，简单计算得到对应的字符串，输入得到最后的flag<br><img src="https://img-blog.csdnimg.cn/20201228195419888.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NjIyNzAxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>crypto类型的题目可能会涉及多方面知识，以后应该学习各个方向的知识，才能更好的解决问题</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://lqvir.github.io/2020/12/28/flag_in_your_hand1/" data-id="ckj8jsw450000pgvlc0c48r0t" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-keyboard" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/12/28/keyboard/" class="article-date">
+  <time datetime="2020-12-28T12:37:30.657Z" itemprop="datePublished">2020-12-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://adworld.xctf.org.cn/task/answer?type=crypto&number=5&grade=1&id=4929&page=1">告诉你个秘密</a></p>
+<p>附件为一个txt文件，里面内容只有2行</p>
+<blockquote>
+<p>636A56355279427363446C4A49454A7154534230526D6843<br>56445A31614342354E326C4B4946467A5769426961453067</p>
+</blockquote>
+<p>观察发现里面所有的字符，都不大于F，所以可以首先尝试将其按照ascii的十六进制解码得到另一串字符串</p>
+<blockquote>
+<p>cjV5RyBscDlJIEJqTSB0RmhCVDZ1aCB5N2lKIFFzWiBiaE0g</p>
+</blockquote>
+<p>字符串中出现了字母数字组合，且没有不可见字母，所以使用base64解码</p>
+<blockquote>
+<p>r5yG lp9I BjM tFhBT6uh y7iJ QsZ bhM </p>
+</blockquote>
+<p>有明显的分组特征，经过观察发现其在键盘上的位置刚好可以围住一些字母，按照这种规则走下去，可以得到一个意义的字符串，也就是flag</p>
+<blockquote>
+<p>TONGYUAN</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://lqvir.github.io/2020/12/28/keyboard/" data-id="ckj8jsw4f0002pgvl7tib62iw" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-sherlock" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/12/28/sherlock/" class="article-date">
+  <time datetime="2020-12-28T12:37:03.723Z" itemprop="datePublished">2020-12-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://adworld.xctf.org.cn/task/answer?type=crypto&number=5&grade=1&id=5526&page=1">sherlock</a></p>
+<p>附件为一篇小说，首先采用搜索方法，直接搜索ｆｌａｇ，并没有什么发现，但是<img src="https://img-blog.csdnimg.cn/20201228202120577.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NjIyNzAxNg==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>发现大写字符在文件内容是随机出现的,利用python提取出其中所有的大写字母</p>
+<blockquote>
+<p>ZEROONEZEROZEROZEROZEROONEZEROZEROONEZEROZEROONEZEROZEROONEZEROONEZEROONEZEROONEZEROZEROZEROONEZEROONEZEROZEROONEONEZEROONEZEROZEROZEROZEROONEONEZEROONEZEROONEZEROONEZEROZEROZEROONEZEROZEROZEROONEONEZEROZEROONEONEONEONEZEROONEONEZEROONEONEZEROONEZEROZEROZEROZEROZEROONEONEZEROZEROZEROONEZEROONEONEZEROZEROONEZEROZEROZEROZEROONEONEZEROZEROONEONEZEROONEZEROONEONEONEONEONEZEROZEROONEONEZEROZEROZEROONEZEROONEONEZEROONEONEONEZEROZEROONEZEROONEONEONEONEONEZEROONEONEONEZEROZEROZEROZEROZEROONEONEZEROONEONEZEROZEROZEROZEROONEONEZEROONEZEROZEROZEROZEROONEONEZEROZEROZEROONEZEROONEONEZEROONEONEONEZEROZEROONEZEROONEONEONEONEONEZEROZEROONEONEZEROONEZEROONEZEROZEROONEONEZEROZEROZEROONEZEROZEROONEONEZEROONEONEONEZEROZEROONEONEZEROZEROONEONEZEROONEONEONEONEONEZEROONE</p>
+</blockquote>
+<p>是文字的01串,将其转化成二进制数,再转化为十六进制,对应ascii解码得到flag的字符串.</p>
+<blockquote>
+<p>0x424954534354467b683164335f316e5f706c34316e5f353137337d</p>
+</blockquote>
+<blockquote>
+<p>BITSCTF{h1d3_1n_pl41n_5173}</p>
+</blockquote>
+<p>脚本如下:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">f=<span class="built_in">open</span>(<span class="string">&#x27;c.txt&#x27;</span>)</span><br><span class="line">lines=f.read()</span><br><span class="line">t=[]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> lines:</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> i:</span><br><span class="line">        <span class="keyword">if</span> <span class="string">&#x27;A&#x27;</span>&lt;=i&lt;=<span class="string">&#x27;Z&#x27;</span>:</span><br><span class="line">            t.append(j)</span><br><span class="line"></span><br><span class="line">s=<span class="string">&#x27;&#x27;</span>.join(t)</span><br><span class="line">print(s)</span><br><span class="line">f=<span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> s:</span><br><span class="line">    <span class="keyword">if</span> i==<span class="string">&#x27;Z&#x27;</span>:</span><br><span class="line">        f+=<span class="string">&#x27;0&#x27;</span></span><br><span class="line">    <span class="keyword">elif</span> i==<span class="string">&#x27;N&#x27;</span>:</span><br><span class="line">        f+=<span class="string">&#x27;1&#x27;</span></span><br><span class="line"></span><br><span class="line">print(<span class="built_in">len</span>(f))</span><br><span class="line"></span><br><span class="line">print(<span class="built_in">hex</span>(<span class="built_in">int</span>(f,base=<span class="number">2</span>)))</span><br><span class="line">m=<span class="built_in">int</span>(f,base=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">print(m)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://lqvir.github.io/2020/12/28/sherlock/" data-id="ckj8jsw4d0001pgvl7g1j8rlm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-zhuanlunji" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/12/22/zhuanlunji/" class="article-date">
@@ -366,23 +481,23 @@
       <ul>
         
           <li>
+            <a href="/2020/12/28/flag_in_your_hand1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/28/keyboard/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/28/sherlock/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2020/12/22/zhuanlunji/">(no title)</a>
           </li>
         
           <li>
             <a href="/2020/12/22/normalrsa/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2020/12/22/ecc/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2020/12/15/xctf2/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2020/12/15/easychallenge/">(no title)</a>
           </li>
         
       </ul>
